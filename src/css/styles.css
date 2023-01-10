@@ -1,0 +1,67 @@
+.container {
+background-color: rgb(181, 179, 179);
+font-size: 15px;
+padding: 3em 3em;
+width: 90vw;
+max-width: 30em;
+position: absolute;
+transform: translatex(-50%);
+left: 50%;
+top: 2em;
+border-radius: 1em;
+box-shadow: .3em .3em black;
+}
+
+.container p {
+  color:black
+}
+
+.container h1 {
+  color: rgb(59, 59, 181);
+}
+
+.form-container {
+  width: 100%;
+  display: grid;
+  gap: .1em;
+  grid-template-columns: 9fr 3 fr;
+  font-size: 1em;
+  padding: .5em;
+}
+
+.form-container input {
+  background-color: rgb(196, 193, 193);
+  width: 100%;
+  font-size: 1em;
+  padding: .5em;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.form-container button {
+  background-color: orange;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  margin-left: 28%;
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+}
+
