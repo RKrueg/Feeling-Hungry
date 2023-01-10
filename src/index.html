@@ -4,14 +4,18 @@
 </head>
 <body>
   <div class="container">
-    <h1>Is your significant other hungry? Are you having trouble deciding what to eat?</h1>
-    <p>To get a great meal, click our food cart button to generate the perfect meal for you!</p>
-    <form>
-      <label for="meal">Enter a craving:</label>
-      <input id="meal" type="text" name="meal">
-      <button type="submit" class="btn-success" id="random">The Perfect Meal</button>
-    </form>
-    <p id="showResponse"></p>
+    <h1>Date Night Recipes</h1>
+    <p>Enter a craving and smash that button to generate the perfect meal for date night!</p>
+    <div class="form-container">
+      <form>
+        <label for="meal"></label>
+        <input id="meal" type="text" name="meal" placeholder="Enter a craving here">
+        <button type="submit" class="btn-success" id="random">The Perfect Meal</button>
+      </form>
+      <div id="showImage">
+        </div>
+      <p id="showResponse"></p>
+    </div>
   </div>
 </body>
 </html>
