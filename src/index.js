@@ -40,23 +40,22 @@ function getMeal(meal) {
 function printElements(data) {
   console.log(data[0])
   let text = "";
-  // for (let i = 0; i < data.length; i++) {
+  // let mealChoices = document.getElementById('showImage');
   for (let i = 0; i < data[0].meals.length; i++) {
-    text += `\n Your perfect meal focused around ${data[1]} would be ${data[0].meals[i].strMeal}.\n \n Step by step instructions to make your significant other love the food you cooked:\n \n ${data[0].meals[i].strInstructions} \n \n`;
-    // image += `${data[0].meals[i].strMealThumb}`
-    // text += "\n Your date meal is: " + data[0].meals[i].strMeal + "\n \n" + "This is a " + data[0].meals[i].strArea + " meal." + "\n \n" + "Follow Instructions Below!" + "\n \n " + data[0].meals[i].strInstructions + "\n" + "\n"
+    text += `<div class="showImg"> <img src="${data[0].meals[i].strMealThumb}"/></div> \n \n Your perfect meal focused around ${data[1]} would be ${data[0].meals[i].strMeal}.\n \n Step by step instructions to make your significant other love the food you cooked:\n \n ${data[0].meals[i].strInstructions} \n \n`;
+    // mealChoices.innerHTML = `
+    // <div class="showImg">
+    //   <img src="${data[0].meals[i].strMealThumb}" alt="${data[0].meals[i].strMeal} image"/>
+    //   </div>
+    //   <p class="showResponse">${text}</p>`;
   }
-  document.querySelector('#showResponse').innerText = text;
-  let html = <div class = "showImage"> 
-  <img src = "${data[0].meal[i].strMealThumb}" alt = ""></img>
-  </div>
-  ;
-  document.querySelector('showImage').innerHTML = html;
-  // document.querySelector('#showImage').innerHTML = image;
-  // document.getElementById('displayImage').innerHTML = null;
-  // let img = document.createElement('img');
+  document.querySelector('#showResponse').innerHTML = text;
 
-  // document.querySelector('#showResponse').innerText = `\n + Your perfect meal focused around ${data[1]} would be ${data[0].meals[i].strMeal}.\n Step by step instructions to make your significant other love the food you cooked:\n ${data[0].meals[i].strInstructions}`;
+  // let html = <div class = "showImage"> 
+  // <img src = "${data[0].meal[i].strMealThumb}" alt = ""></img>
+  // </div>
+  // ;
+  // document.querySelector('showImage').innerHTML = html;
 }
 
 
