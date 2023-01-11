@@ -68,5 +68,17 @@ box-shadow: .3em .3em black;
 img {
   display: block;
   width: 50%;
-  margin: 1.5em auto 0 auto;
+  margin: 1.2em auto 1.2em auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
 }
