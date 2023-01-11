@@ -15,21 +15,21 @@ function getMeal(meal) {
 
 function printElements(data) {
   console.log(data[0])
-  let text = "";
-  //const dishIngredients = [];
+  let displayMeal = "";
+  // const dishIngredients = [];
   for (let i = 0; i < data[0].meals.length; i++) {
    // if (data[0].meals[`strIngredient${i}`]) {
    //   dishIngredients.push(`${data[0].meals[`strIngredient${i}`]}`)
     
    // console.log(data[0].meals[`strIngredient${i}`])
-    text += `<div class="dish"> <h3 class="dishName"> ${data[0].meals[i].strMeal}</h3></div>
+    displayMeal += `<div class="dish"> <h3 class="dishName"> ${data[0].meals[i].strMeal}</h3></div>
     <div class="showArea"><h5>${data[0].meals[i].strArea} meal</h5></div>
     <div class="showImg"> <img src="${data[0].meals[i].strMealThumb}"/></div>
     <div class="showInstructions"><h5>Directions</h5></div>
     <a href=${data[0].meals[i].strYoutube}>Check Out How To Video Here!</a>
     <p class="instructions">${data[0].meals[i].strInstructions}</p>`;
 }
-  document.querySelector('#showResponse').innerHTML = text;
+  document.querySelector('#showResponse').innerHTML = displayMeal;
 }
 
 function printError(error) {
@@ -40,7 +40,7 @@ function handleFormSubmission(event) {
   event.preventDefault();
   const meal = document.querySelector('#meal').value;
   document.querySelector('#meal').value = null;
-  getMeal(meal);
+    getMeal(meal);
 }
 
 window.addEventListener("load", function () {
