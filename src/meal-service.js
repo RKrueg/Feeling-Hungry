@@ -2,7 +2,7 @@ export default class MealService {
   static getMeal(meal) {
     return new Promise(function (resolve, reject) {
       let request = new XMLHttpRequest();
-      const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`;
+      const url = `https://www.themealdb.com/api/json/v1/${process.env.API_KEY}/search.php?s=${meal}`;
       request.addEventListener("loadend", function () {
         const response = JSON.parse(this.responseText);
         if (this.status === 200) {
